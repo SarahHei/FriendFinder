@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>FriendFinder Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+ </head>
+  <body>
+    <div class="container nameImg">
+        <h1>About You</h1>
+        <form>
+            <hr>
+            <div class="form-group">
+                <label for="userName">Name (Required)</label>
+                <input type="text" class="form-control" id="userName" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="imgLink">Link to Photo (Optional)</label>
+                <input type="text" class="form-control" id="imgLink" placeholder="Link to an image of you">
+            </div>
+            <br>
+            <hr>
+        </form>    
+    </div>  
+
+    
+    <div class="container">
+        <h3> Please answer each question on a scale of 1 to 5, where 1 means you Strongly Disagree and 5 means you Strongly Agree.</h3>
+        <hr>
+
+        <br>
+        <h3>Questions</h3>
+        <br>
+
+        <h4>Your love long walks in the park.</h4>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love to have your tummy rubbed.</h4>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love treats that taste like bacon.</h4>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love chasing a tennis ball.</h4>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love barking at the mailman.</h4>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love watching movies on the couch.</h4>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love meeting your friends on a walk.</h4>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love going to the vet.</h4>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love having your nails clipped.</h4>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <h4>You love riding in the car with the windows down.</h4>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+    </div>
+
+       <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Your Friend Finder Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $('#submit').on('click', function () {
+            if (!$('#name').val()) {
+                alert('Enter your name');
+                return false;
+            }
+            let userInfo = {
+                name: $('#name').val().trim(),
+                photo: $('#photo').val().trim(),
+                scores: []
+            };
+
+            let validScores = true;
+            for (let i = 1; i <= 10; i++) {
+                if (!$('#q' + i).val()) {
+                    validScores = false;
+                }
+                userInfo.scores.push($('#q' + i).val());
+            };
+            console.log(userInfo.scores)
+            if (validScores) {
+                console.log("hello")
+                $.post("/api/friends", userInfo).then(function (bestMatch) {
+                    $('#match-name').text(bestMatch.name);
+                    $('#match-img').attr('src', bestMatch.photo);
+                    console.log(bestMatch);
+                    $('#results-modal').modal('toggle');
+                    for (let i = 1; i <= 10; i++) {
+                        $('#q' + i).val("");
+                    };
+                    $('#name').val("");
+                    $('#photo').val("");
+                })
+            } else {
+                alert("Answer all the questions!");
+            };
+        })
+    </script>
+  </body>
+</html>
