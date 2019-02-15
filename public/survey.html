@@ -167,17 +167,18 @@
         </div>
     </div>
     <script>
-        $('#submit').on('click', function () {
-            if (!$('#name').val()) {
+        $('#submit').on('click', function (event) {
+        event.preventDefault();
+            if (!$('#userName').val()) {
                 alert('Enter your name');
                 return false;
-            }
+            } 
             let userInfo = {
-                name: $('#name').val().trim(),
-                photo: $('#photo').val().trim(),
+                name: $('#userName').val().trim(),
+                photo: $('#imgLink').val().trim(),
                 scores: []
             };
-
+    
             let validScores = true;
             for (let i = 1; i <= 10; i++) {
                 if (!$('#q' + i).val()) {
@@ -196,11 +197,11 @@
                     for (let i = 1; i <= 10; i++) {
                         $('#q' + i).val("");
                     };
-                    $('#name').val("");
-                    $('#photo').val("");
+                    $('#userName').val("");
+                    $('#imgLink').val("");
                 })
             } else {
-                alert("Answer all the questions!");
+                alert("Please answer every question.");
             };
         })
     </script>
